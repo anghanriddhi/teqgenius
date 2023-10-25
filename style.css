@@ -1,0 +1,25 @@
+.path {
+    position: relative;
+    height: 100vh;
+}
+
+img {
+    width: 500px;
+    position: absolute;
+    display: block;
+    transition: left 1s linear;
+    animation: car-ani 2s linear infinite;
+    top: 0%;
+    left: 0%;
+}
+
+@keyframes car-ani {
+    from {
+        top: 0%;
+        left: 0%;
+    }  
+    to {
+        top: calc(100% - 280px);
+        left: calc(100% - 500px);
+    }
+}
